@@ -1,42 +1,89 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing:border-box;
-}
+
 
 body {
-    margin-top: 200px
-    background-color lightgrey;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .calculator{
     display: flex;
-    justify-content: center;
-    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;  
     width: 80vw;
-    height: auto;
+    height: 60vh;
+    margin: 100px;
+    padding: 80px;
+ 
+    
 }
 
 .calculator_keys{
     display: grid;
-    background-color: white;
+    background-color: rgb(126, 9, 126);
     grid-template-columns: repeat(4, 80px);
-    grid-template-rows: minmax(80px, auto) repeat(4, 80px);
+    
+    justify-content: space-evenly;
+    border-radius: 25px; 
+    padding: 13px;
+
+    
+    
+
 }
 
 #calculator_display{
-    border-style: groove;
-    border-width: 1px;
-    border-color: white;
+    border-style:inset;
+    border-width: 3px;
     grid-column: span 3;
-    text-align: right;
-    font-size: 38px;
-    background-color: rgb(87, 187, 87);
-    color:white
+    text-align:right;
+    font-size: 30px;
+    background-color: rgb(247, 181, 243);
+    color:white;
+    border-radius: 15px;
+    font-family:cursive;
+    height: 100px;
+    
+
+    
+
+    
 }
 
 .numberbutton {
-    background-color: rgb(87, 187, 87);
+    background-color: rgb(212, 111, 195);
     color: white;
     font-size: 20px;
+    border-radius: 30px;
+    font-family:cursive;
+    height: 100px;
+
+}
+
+.key--operator {
+    background-color: rgb(196, 10, 140);
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    font-family:cursive;
+    height: 100px;
+}
+
+#clearbutton {
+    background-color: rgb(139, 21, 120);
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    font-family:cursive;
+    height: 100px;
+}
+
+
+#key--equal {
+    background-color: rgb(139, 21, 120);
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    font-family:cursive;
+    height: 100px;
 }
